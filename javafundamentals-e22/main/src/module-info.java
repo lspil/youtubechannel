@@ -1,0 +1,4 @@
+module main {
+
+    requires delivery;
+}

@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan(basePackages = {"repositories", "services"})
+@ComponentScan(basePackages = {"repositories", "services", "infrastructure"})
 public class ProjectConfig {
 
     @Bean
@@ -21,8 +21,8 @@ public class ProjectConfig {
         var dataSource = new DriverManagerDataSource();
 
         dataSource.setUrl("jdbc:mysql://localhost/demo");
-        dataSource.setUsername("root");
-        dataSource.setPassword("");
+        dataSource.setUsername("demo");
+        dataSource.setPassword("demo");
 
         return dataSource;
     }
@@ -36,4 +36,5 @@ public class ProjectConfig {
     public PlatformTransactionManager transactionManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
+
 }

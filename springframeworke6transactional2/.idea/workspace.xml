@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d75af6ad-9d10-4bc2-8402-f670639d989e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/infrastructure/CreateSchema.java" afterDir="false" />
+    <list default="true" id="d75af6ad-9d10-4bc2-8402-f670639d989e" name="Default Changelist" comment="" />
+    <list id="04711674-125e-478c-9413-6bbba46eb8c9" name="nevercommit" comment="">
       <change afterPath="$PROJECT_DIR$/target/classes/META-INF/springframeworke6transactional2.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/infrastructure/CreateSchema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/ProjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ProjectConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config/ProjectConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/ProjectConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/repositories/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repositories/ProductRepository.class" afterDir="false" />
@@ -142,12 +132,13 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d75af6ad-9d10-4bc2-8402-f670639d989e" name="Default Changelist" comment="" />
+      <changelist id="04711674-125e-478c-9413-6bbba46eb8c9" name="nevercommit" comment="" />
       <created>1559923378910</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559923378910</updated>
       <workItem from="1559923381471" duration="3822000" />
-      <workItem from="1579605240056" duration="2902000" />
+      <workItem from="1579605240056" duration="3199000" />
     </task>
     <task id="LOCAL-00001" summary="[Elisei] add gitignore file">
       <created>1579609735290</created>
@@ -156,7 +147,35 @@
       <option name="project" value="LOCAL" />
       <updated>1579609735290</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[Elisei] add readme instructions and docker compose file">
+      <created>1579609782038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579609782038</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[Elisei] add component to init the database, add a new package for scanning, add init db step in Main">
+      <created>1579609848515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579609848515</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[Elisei] remove target from git by specifying it in gitignore">
+      <created>1579609941431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579609941431</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[Elisei] add intellijidea datasource configuration for databases">
+      <created>1579610023905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579610023905</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,17 +186,21 @@
       <path value="$PROJECT_DIR$/../.." />
     </ignored-roots>
     <MESSAGE value="[Elisei] add gitignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Elisei] add gitignore file" />
+    <MESSAGE value="[Elisei] add readme instructions and docker compose file" />
+    <MESSAGE value="[Elisei] add component to init the database, add a new package for scanning, add init db step in Main" />
+    <MESSAGE value="[Elisei] remove target from git by specifying it in gitignore" />
+    <MESSAGE value="[Elisei] add intellijidea datasource configuration for databases" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Elisei] add intellijidea datasource configuration for databases" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579607836619">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="190" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579607836619" />
-    <state x="149" y="123" key="CommitChangelistDialog2" timestamp="1579609941263">
+    <state x="149" y="123" key="CommitChangelistDialog2" timestamp="1579610023719">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="149" y="123" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579609941263" />
+    <state x="149" y="123" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1579610023719" />
     <state width="1638" height="171" key="GridCell.Tab.0.bottom" timestamp="1579609661609">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

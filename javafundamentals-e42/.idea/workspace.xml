@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d1c9019-e27a-49ef-bf24-1d92e0daa8b4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aidvXeLtfcyPgubJu64tHEn3ue" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="examples" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Example10">
+    <configuration name="Example10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.Example10" />
+      <module name="javafundamentals-e42" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.Example6" />
+      <module name="javafundamentals-e42" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.Example7" />
+      <module name="javafundamentals-e42" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.Example8" />
+      <module name="javafundamentals-e42" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Example9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="examples.Example9" />
+      <module name="javafundamentals-e42" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Example10" />
+        <item itemvalue="Application.Example9" />
+        <item itemvalue="Application.Example8" />
+        <item itemvalue="Application.Example7" />
+        <item itemvalue="Application.Example6" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d1c9019-e27a-49ef-bf24-1d92e0daa8b4" name="Default Changelist" comment="" />
+      <created>1587222578580</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587222578580</updated>
+      <workItem from="1587222580385" duration="6907000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="144" key="GridCell.Tab.0.bottom" timestamp="1587229496277">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496277" />
+    <state width="1493" height="144" key="GridCell.Tab.0.center" timestamp="1587229496277">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496277" />
+    <state width="1493" height="144" key="GridCell.Tab.0.left" timestamp="1587229496277">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496277" />
+    <state width="1493" height="144" key="GridCell.Tab.0.right" timestamp="1587229496277">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496277" />
+    <state width="1493" height="144" key="GridCell.Tab.1.bottom" timestamp="1587229496278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496278" />
+    <state width="1493" height="144" key="GridCell.Tab.1.center" timestamp="1587229496278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496278" />
+    <state width="1493" height="144" key="GridCell.Tab.1.left" timestamp="1587229496278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496278" />
+    <state width="1493" height="144" key="GridCell.Tab.1.right" timestamp="1587229496278">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="144" key="GridCell.Tab.1.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1587229496278" />
+  </component>
+</project>

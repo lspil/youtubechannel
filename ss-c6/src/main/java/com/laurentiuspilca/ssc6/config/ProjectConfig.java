@@ -38,7 +38,7 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    protected void configure(HttpSecurity http) {
+    protected void configure(HttpSecurity http) throws Exception {
         http.addFilterAt(usernamePasswordAuthFilter,
                 BasicAuthenticationFilter.class);
     }

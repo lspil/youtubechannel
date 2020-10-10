@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b5819c5-7692-422a-9293-1602fbb2518f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/Example5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Example5.java" afterDir="false" />
-    </list>
+    <list default="true" id="8b5819c5-7692-422a-9293-1602fbb2518f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +52,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Example5">
     <configuration name="Example1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -121,17 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Example5" />
@@ -150,7 +142,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601739062701</updated>
-      <workItem from="1601739063743" duration="3662000" />
+      <workItem from="1601739063743" duration="4359000" />
+      <workItem from="1601828177528" duration="301000" />
     </task>
     <servers />
   </component>
@@ -167,23 +160,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1537" height="274" key="GridCell.Tab.0.bottom" timestamp="1601743808515">
+    <state width="1537" height="274" key="GridCell.Tab.0.bottom" timestamp="1601800440442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743808514" />
-    <state width="1537" height="274" key="GridCell.Tab.0.center" timestamp="1601743808514">
+    <state width="1537" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743920353" />
+    <state width="1537" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601800440442" />
+    <state width="1537" height="274" key="GridCell.Tab.0.center" timestamp="1601800440442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743808514" />
-    <state width="1537" height="274" key="GridCell.Tab.0.left" timestamp="1601743808514">
+    <state width="1537" height="274" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743920353" />
+    <state width="1537" height="274" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601800440442" />
+    <state width="1537" height="274" key="GridCell.Tab.0.left" timestamp="1601800440442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743808514" />
-    <state width="1537" height="274" key="GridCell.Tab.0.right" timestamp="1601743808514">
+    <state width="1537" height="274" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743920353" />
+    <state width="1537" height="274" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601800440442" />
+    <state width="1537" height="274" key="GridCell.Tab.0.right" timestamp="1601800440442">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743808514" />
+    <state width="1537" height="274" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601743920353" />
+    <state width="1537" height="274" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601800440442" />
+    <state x="209" y="32" key="new project wizard" timestamp="1601828474942">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="32" key="new project wizard/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1601828474942" />
   </component>
 </project>

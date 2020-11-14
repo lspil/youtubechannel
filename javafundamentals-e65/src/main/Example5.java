@@ -9,7 +9,7 @@ public class Example5 {
   public static void main(String[] args) {
     String date = "2020-10-31";
 
-    DateTimeFormatter df = DateTimeFormatter.ofPattern("YYYY-MM-dd", Locale.US);
+    DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.US);
 
     LocalDate ld = LocalDate.parse(date, df);
 

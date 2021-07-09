@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
     @Autowired
-    private NumberService numberService; //proxy
+    //private RandomNumberService numberService; //proxy MK
+    private NumberService numberService;
 
     @GetMapping("/home")
     public String indexAction(Model model) {

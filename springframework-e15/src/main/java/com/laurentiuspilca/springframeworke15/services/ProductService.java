@@ -16,6 +16,17 @@ public class ProductService {
 
     public List<String> getProductNamesWithEvenNoOfChar() {
         List<String> names = productRepository.getProductNames();
+        
+//        List<String> result = new ArrayList<>();
+//        for ( String n: names) {
+//        	if ( n.length() % 2 == 0 ) {
+//        		result.add(n);
+//        		productRepository.addProduct(n);
+//        	}
+//        }
+//        return result;
+        
+
         return names.stream()
                 .filter(n -> n.length() % 2 == 0)
                 .collect(Collectors.toList());

@@ -38,7 +38,7 @@ public class CustomAuthenticationFilter extends OncePerRequestFilter {
                 response.setStatus(HttpServletResponse.SC_FORBIDDEN);
             }
         } catch (AuthenticationException e) {
-            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+            response.setStatus(HttpServletResponse.SC_EXPECTATION_FAILED);
         }
     }
 }

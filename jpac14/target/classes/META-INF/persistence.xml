@@ -6,7 +6,7 @@
         <description>JpaForBeginners</description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
-        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+        <shared-cache-mode>DISABLE_SELECTIVE</shared-cache-mode>
 
         <properties>
             <!-- database connection -->

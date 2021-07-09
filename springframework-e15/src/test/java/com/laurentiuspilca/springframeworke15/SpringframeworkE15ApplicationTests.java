@@ -1,7 +1,16 @@
 package com.laurentiuspilca.springframeworke15;
 
-import com.laurentiuspilca.springframeworke15.repositories.ProductRepository;
-import com.laurentiuspilca.springframeworke15.services.ProductService;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.ArgumentMatchers.any;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -9,19 +18,10 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import com.laurentiuspilca.springframeworke15.repositories.ProductRepository;
+import com.laurentiuspilca.springframeworke15.services.ProductService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -52,15 +52,18 @@ public class SpringframeworkE15ApplicationTests {
 
     @Test
     public void noProductsReturnedTest() {
+    	System.out.println("test 1");
         given(productRepository.getProductNames()).willReturn(Collections.emptyList());
 
         List<String> res = productService.getProductNamesWithEvenNoOfChar();
-
+        //System.out.println(res);
+        
         assertTrue(res.isEmpty());
     }
 
     @Test
     public void moreProductsAreFoundTest() {
+    	System.out.println("test 2");
         List<String> input = Arrays.asList("aa", "bbbb", "ccc");
 
         given(productRepository.getProductNames()).willReturn(input);

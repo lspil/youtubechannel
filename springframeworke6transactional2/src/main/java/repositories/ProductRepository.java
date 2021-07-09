@@ -13,7 +13,9 @@ public class ProductRepository {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @Transactional(propagation = Propagation.NOT_SUPPORTED)
+    //@Transactional(propagation = Propagation.REQUIRED)	// default, no records are entered
+    @Transactional(propagation = Propagation.REQUIRES_NEW)  
+    // 6 transactions are being created
     public void addProduct(String name) {
         String sql = "INSERT INTO product VALUES (NULL, ?)";
         jdbcTemplate.update(sql, name);

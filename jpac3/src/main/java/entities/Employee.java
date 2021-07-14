@@ -12,7 +12,7 @@ public class Employee {
 
     @Column(name = "emp_date")
     @Temporal(TemporalType.DATE)
-    private Date empDate;
+    private Date empDate;			// date, date & time, time
 
     public int getId() {
         return id;

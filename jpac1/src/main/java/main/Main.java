@@ -17,9 +17,9 @@ public class Main {
         var em1 = emf.createEntityManager();
 
         Product p1 = new Product();
-        p1.setId(201);
+        //p1.setId(201);
         p1.setName("Beer");
-        p1.setPrice(10.4);
+        p1.setPrice(8);
         p1.setExpirationDate(LocalDate.now());
 
         em1.getTransaction().begin();
@@ -30,7 +30,7 @@ public class Main {
         em1.close();
 
         Product p2 = new Product();
-        p2.setId(202);
+        //p2.setId(202);
         p2.setName("Beer");
         p2.setPrice(10.4);
         p2.setExpirationDate(LocalDate.now());

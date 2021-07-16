@@ -1,10 +1,8 @@
 package main;
 
-import entities.Building;
-import entities.Person;
-import entities.embedabbles.BuildingPK;
-
 import javax.persistence.Persistence;
+
+import entities.Person;
 
 public class Main {
 
@@ -13,11 +11,19 @@ public class Main {
         var em = emf.createEntityManager();
 
         em.getTransaction().begin();
+        
+//        Company c = new Company();
+//        c.setName("ABC");
+//        c.setAddress(new Address());
+//
+//        c.getAddress().setNo("4");
+//        c.getAddress().setStr("Some Street");
+//        c.getAddress().setCity("London");
 
 //        Department d = new Department();
 //        d.setName("DEP 1");
 //        d.setCode("QWE");
-//        d.setNo(10);
+//        d.setNo(11);
 //        em.persist(d);
 
 //        Building b = new Building();

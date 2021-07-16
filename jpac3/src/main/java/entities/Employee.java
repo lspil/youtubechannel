@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name="employee")
 public class Employee {
 
     @Id
@@ -11,7 +12,7 @@ public class Employee {
     private int id;
 
     @Column(name = "emp_date")
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.DATE)	// TemporalType.DATE, TIMESTAMP, TIME
     private Date empDate;			// date, date & time, time
 
     public int getId() {

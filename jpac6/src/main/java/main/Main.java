@@ -24,7 +24,7 @@ public class Main {
 //        d1.setName("DEP 1");
 //        d1.setEmployees(new ArrayList<>());
 //        d1.getEmployees().add(e1);
-//
+
 //        em.persist(e1);
 //        em.persist(d1);
 
@@ -38,7 +38,8 @@ public class Main {
         d1.setPerson(p1);
         p1.getDocuments().add(d1);
 
-        //em.persist(p1);
+        // any will do
+//        em.persist(p1);
         em.persist(d1);
 
         em.getTransaction().commit();

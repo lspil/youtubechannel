@@ -3,6 +3,7 @@ package entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "product")
 public class Product {
 
     @Id
@@ -13,8 +14,10 @@ public class Product {
 
     private double price;
 
-    @OneToOne(mappedBy = "product", fetch = FetchType.LAZY, targetEntity = Detail.class)
-    private Object detail;
+    //@OneToOne(mappedBy = "product")
+    @OneToOne(mappedBy = "product")
+    private Detail detail;
+    //private Object detail;
 
     public int getId() {
         return id;
@@ -40,11 +43,11 @@ public class Product {
         this.price = price;
     }
 
-    public Object getDetail() {
+    public Detail getDetail() {
         return detail;
     }
 
-    public void setDetail(Object detail) {
+    public void setDetail(Detail detail) {
         this.detail = detail;
     }
 }

@@ -1,14 +1,20 @@
 package entities;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-@SecondaryTables({
-        @SecondaryTable(name = "address",
-                pkJoinColumns = @PrimaryKeyJoinColumn(name = "company")),
-        @SecondaryTable(name = "miscellaneous",
-                pkJoinColumns = @PrimaryKeyJoinColumn(name = "company"))
-})
+@Table(name = "company")
+//@SecondaryTable( name = "address")
+//@SecondaryTables({
+//        @SecondaryTable(name = "address",
+//                pkJoinColumns = @PrimaryKeyJoinColumn(name = "company")),
+//        @SecondaryTable(name = "miscellaneous",
+//                pkJoinColumns = @PrimaryKeyJoinColumn(name = "company"))
+//})
 public class Company {
 
     @Id
@@ -17,14 +23,14 @@ public class Company {
 
     private String name;
 
-    @Column(table = "address")
-    private String street;
+//    @Column(table = "address")
+//    private String street;
+//
+//    @Column(table = "address")
+//    private String number;
 
-    @Column(table = "address")
-    private String number;
-
-    @Column(table = "miscellaneous")
-    private String details;
+//    @Column(table = "miscellaneous")
+//    private String details;
 
     public int getId() {
         return id;
@@ -42,27 +48,27 @@ public class Company {
         this.name = name;
     }
 
-    public String getStreet() {
-        return street;
-    }
+//    public String getStreet() {
+//        return street;
+//    }
+//
+//    public void setStreet(String street) {
+//        this.street = street;
+//    }
 
-    public void setStreet(String street) {
-        this.street = street;
-    }
+//    public String getNumber() {
+//        return number;
+//    }
+//
+//    public void setNumber(String number) {
+//        this.number = number;
+//    }
 
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public String getDetails() {
-        return details;
-    }
-
-    public void setDetails(String details) {
-        this.details = details;
-    }
+//    public String getDetails() {
+//        return details;
+//    }
+//
+//    public void setDetails(String details) {
+//        this.details = details;
+//    }
 }

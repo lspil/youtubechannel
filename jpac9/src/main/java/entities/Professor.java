@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Map;
 
 @Entity
+@Table(name="professor")
 public class Professor {
 
     @Id

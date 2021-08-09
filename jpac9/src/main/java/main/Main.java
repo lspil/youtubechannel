@@ -48,7 +48,7 @@ public class Main {
 //        em.persist(d1);
 //        em.persist(e1);
 
-        Department d = em.find(Department.class, 2);
+        Department d = em.find(Department.class, 3);
         System.out.println(d.getEmployees());
 
         em.getTransaction().commit();

@@ -1,8 +1,10 @@
 package entities;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="chocolate")
 public class Chocolate extends Product {
 
     private int kCal;

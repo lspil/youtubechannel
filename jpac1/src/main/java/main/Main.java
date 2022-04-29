@@ -13,7 +13,7 @@ public class Main {
         // EntityManagerFactory
         // EntityManager
 
-        var emf = Persistence.createEntityManagerFactory("my-persistence-h2-unit");
+        var emf = Persistence.createEntityManagerFactory("my-persistence-unit");
         var em1 = emf.createEntityManager();
 
         em1.getTransaction().begin();

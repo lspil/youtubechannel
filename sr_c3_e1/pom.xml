@@ -14,7 +14,7 @@
     <name>sr_c3_e1</name>
     <description>sr_c3_e1</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>

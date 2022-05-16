@@ -24,7 +24,17 @@ public class DemoController {
 //    var f3 = Flux.fromIterable(Set.of(1,2,3,4,5,6,7));
 //
 //    var m1 = Mono.just(1);
+      
 
+//      f1.doOnNext(n -> System.out.println(n));
+
+//      f1.doOnNext(n -> System.out.println(n))
+//      	.subscribe(c -> System.out.println("."+c));
+
+//      f1.subscribe(c -> System.out.println(c));
+
+//      f1.subscribe(new DemoSubscriber());
+      
       f1.doOnNext(c -> {throw new RuntimeException("Nooooooo");})
         .subscribe(new DemoSubscriber());
   }

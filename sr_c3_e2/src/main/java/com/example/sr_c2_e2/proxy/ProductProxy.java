@@ -25,17 +25,17 @@ public class ProductProxy {
 //        .onErrorResume(e -> Flux.just(p));
 //        .onErrorResume(WebClientRequestException.class, e -> Flux.just(p));
 //        .onErrorResume(e -> e.getMessage() == null, e -> Flux.just(p));
-//        .onErrorReturn(p);
+//        .onErrorReturn(p);												// no access to the exception
 //        .onErrorReturn(WebClientRequestException.class, p);
 //        .onErrorReturn(e -> e.getMessage() == null, p);
 //        .onErrorMap(e -> new ProductRetrieveException());
-//        .doOnNext(n -> {
-//          if (n.getName() == null) throw new RuntimeException();
-//        })
-//        .onErrorContinue((e, o) -> System.out.print(e.getMessage()));
+        .doOnNext(n -> {
+          if (n.getName() == null) throw new RuntimeException();
+        })
+        .onErrorContinue((e, o) -> System.out.print(e.getMessage()));		// skips an event
 //        .onErrorContinue(RuntimeException.class, (e, o) -> System.out.print(e.getMessage()))
 //        .onErrorContinue(e -> e.getMessage() == null, (e, o) -> System.out.print(e.getMessage()))
 //        .retry();
-        .retry(3);
+//        .retry(3);
   }
 }

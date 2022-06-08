@@ -14,25 +14,28 @@ import java.util.stream.Collectors;
 public class DemoController {
 
   @GetMapping(value = "/demo", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+//  public Mono<Integer> demo() {
+//  public Mono<List<String>> demo() {
   public Flux<String> demo() {
     Flux<String> f1 = Flux.just("AAA", "AAA", "BB", "C", "DDDDD", "AAA");
     Flux<String> f2 = Flux.just("qwert", "qaz", "sss");
 
     return f1
+    	.log()
 //        .filter(s -> s.length() % 2 == 0);
 //        .log()
 //        .distinct();
-//        .distinctUntilChanged();
-//        .map(s -> s.length());
+//        .distinctUntilChanged();List<String>
+//         .map(s -> String.valueOf( s.length()));
 //        .flatMap(s -> Flux.just(s.split("")));
-//        .doOnNext(...);
-//        .collect(Collectors.toList());
-//        .collect(Collectors.summingInt(s -> s.length()));
+//        .doOnNext(s -> System.out.println(s));
+//        .collect(Collectors.toList());					// Mono<List<String>>
+//        .collect(Collectors.summingInt(s -> s.length()));	// Mono<Integer>
 //        .concatWith(f2);
 //        .doOnNext(s -> System.out.println(s)) // uppercase
 //        .thenMany(f2); // lowercase
-        .zipWith(f2, (x,y) -> x + "=" + y)
-        .log();
+        .zipWith(f2, (x,y) -> x + "=" + y);
+//        .log();
   }
 
 }

@@ -5,8 +5,7 @@ import org.springframework.security.core.GrantedAuthority;
 
 import java.util.Collection;
 
-public class CustomAuthentication
-        extends UsernamePasswordAuthenticationToken {
+public class CustomAuthentication extends UsernamePasswordAuthenticationToken {
 
     public CustomAuthentication(Object principal, Object credentials) {
         super(principal, credentials);

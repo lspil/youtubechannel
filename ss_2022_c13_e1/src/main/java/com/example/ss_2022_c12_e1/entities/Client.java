@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
+import org.springframework.security.oauth2.server.authorization.settings.TokenSettings;
+
+import java.time.Duration;
 
 @Entity
 @Table(name = "clients")
@@ -106,6 +109,7 @@ public class Client {
         .redirectUri(client.getRedirectUri())
         .clientAuthenticationMethod(new ClientAuthenticationMethod(client.getAuthMethod()))
         .authorizationGrantType(new AuthorizationGrantType(client.getGrantType()))
+        .tokenSettings(TokenSettings.builder().accessTokenTimeToLive(Duration.ofHours(24)).build())
         .build();
   }
 }

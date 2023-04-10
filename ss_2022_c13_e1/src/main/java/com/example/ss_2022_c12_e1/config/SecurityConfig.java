@@ -14,6 +14,7 @@ import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.server.authorization.authentication.OAuth2AuthorizationCodeRequestAuthenticationProvider;
@@ -73,16 +74,16 @@ public class SecurityConfig {
   @Bean
   @Order(2)
   public SecurityFilterChain appSecurityFilterChain(HttpSecurity http) throws Exception {
-    http.formLogin()
-        .and()
-        .authorizeHttpRequests().anyRequest().authenticated();
+    http.formLogin(c -> c.failureForwardUrl("/login"))
+        .authorizeHttpRequests()
+        .anyRequest().authenticated();
 
     return http.build();
   }
 
   @Bean
   public PasswordEncoder passwordEncoder() {
-    return NoOpPasswordEncoder.getInstance();
+    return new BCryptPasswordEncoder();
   }
 
   @Bean

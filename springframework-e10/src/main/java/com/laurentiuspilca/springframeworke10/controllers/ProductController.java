@@ -5,7 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "/product")
+//@RequestMapping(path = "/product")
+@RequestMapping("/product")
 public class ProductController {
 
     @Autowired

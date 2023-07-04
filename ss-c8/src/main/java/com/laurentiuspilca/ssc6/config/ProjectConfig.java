@@ -20,7 +20,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
 @Configuration
-//@EnableAsync
+@EnableAsync
 public class ProjectConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired

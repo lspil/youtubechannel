@@ -4,9 +4,11 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "product")
 public class Product {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Basic(optional = false)

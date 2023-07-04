@@ -2,9 +2,12 @@ package entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
+
 import java.util.Objects;
 
 @Entity
+@Table(name = "product")
 public class Product {
 
     @Id

@@ -14,24 +14,32 @@ import java.util.concurrent.Executors;
 @RestController
 public class HelloController {
 
-    @GetMapping("/hello")
+//	@GetMapping("/hello")
 //    @Async
-    public String hello() {
-        Runnable r = () -> {
-            Authentication authentication =
-                    SecurityContextHolder.getContext().getAuthentication();
+	public String hello2() {
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-            System.out.println(authentication);
-        };
+		System.out.println(authentication);
+		return "Hello " + authentication.getName();
+	};
+
+    @GetMapping("/hello")
+    @Async
+	public String hello() {
+		Runnable r = () -> {
+			Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+			System.out.println(authentication);
+		};
 //        DelegatingSecurityContextRunnable dr = new DelegatingSecurityContextRunnable(r);
 
-        ExecutorService service = Executors.newSingleThreadExecutor();
+		ExecutorService service = Executors.newSingleThreadExecutor();
 //        DelegatingSecurityContextExecutorService dService =
 //                new DelegatingSecurityContextExecutorService(service);
 
-        service.submit(r);
-        service.shutdown();
+		service.submit(r);
+		service.shutdown();
 
-        return "Hello!"; // token
-    }
+		return "Hello!"; // token
+	}
 }

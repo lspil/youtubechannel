@@ -1,18 +1,12 @@
 package main;
 
 
-import entities.*;
-import entities.embeddables.Address;
-import entities.enums.Currency;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.util.Date;
+
+import entities.Company;
+import entities.embeddables.Address;
 
 public class Main {
 
@@ -32,6 +26,7 @@ public class Main {
 //        em.persist(p);
 
 //        Event e = new Event();
+//        //e.setEventTime(LocalDateTime.now());
 //        e.setEventTime(ZonedDateTime.now(ZoneId.of("America/New_York")));
 //        em.persist(e);
 
@@ -46,7 +41,7 @@ public class Main {
         c.getAddress().setNumber("4");
         c.getAddress().setStreet("Some Street");
         c.getAddress().setCity("London");
-
+       
         em.persist(c);
 
         em.getTransaction().commit();

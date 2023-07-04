@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 @NamedQuery(name = "Product.all", query = "SELECT p FROM Product p")
 @NamedQuery(name = "Product.findById", query = "SELECT p FROM Product p WHERE p.id = :id")
+@Table(name="product")
 public class Product {
 
     @Id

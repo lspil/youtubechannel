@@ -21,12 +21,13 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public JdbcUserDetailsManager userDetailsService() {
         // InMemoryUserDetailsManager
-        // JdbcUserDetailsManager
+        // JdbcUserDetailsManager									you do not need SpringData, Hibernate
         return new JdbcUserDetailsManager(dataSource());
     }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
+    	//return NoOpPasswordEncoder.getInstance();
         return new BCryptPasswordEncoder();
     }
 

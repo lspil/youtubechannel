@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.util.Map;
 
 @Entity
+@Table(name="person")
 public class Person {
 
     @Id
@@ -15,6 +16,7 @@ public class Person {
     private String name;
 
     @ElementCollection
+//    @CollectionTable(name = "phone")
     @CollectionTable(name = "phone", joinColumns = @JoinColumn(name = "person"))
     @MapKeyColumn(name = "type")
     @Column(name = "number")

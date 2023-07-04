@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 
 @Entity
+@Table(name="event")
 public class Event {
 
     @Id
@@ -12,6 +13,7 @@ public class Event {
     private int id;
 
     @Column(name = "event_time")
+    //private LocalDateTime eventTime;
     private ZonedDateTime eventTime;
 
     public int getId() {
@@ -22,10 +24,12 @@ public class Event {
         this.id = id;
     }
 
+    //public LocalDateTime getEventTime() {
     public ZonedDateTime getEventTime() {
         return eventTime;
     }
 
+    //public void setEventTime(LocalDateTime eventTime) {
     public void setEventTime(ZonedDateTime eventTime) {
         this.eventTime = eventTime;
     }

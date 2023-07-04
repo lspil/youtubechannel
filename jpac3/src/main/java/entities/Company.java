@@ -5,6 +5,7 @@ import entities.embeddables.Address;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "company")
 public class Company {
 
     @Id

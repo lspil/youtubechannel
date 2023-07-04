@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name="professor")
 public class Professor {
 
     @Id
@@ -12,8 +13,9 @@ public class Professor {
 
     private String name;
 
+//    @ManyToMany()
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    //@JoinColumn
+//    @JoinColumn
     @JoinTable(
             name = "professor_student",
             joinColumns = @JoinColumn(name = "professor"),

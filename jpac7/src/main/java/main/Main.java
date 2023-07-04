@@ -27,7 +27,7 @@ public class Main {
         s1.getProfessors().add(p1);
 
         em.persist(p1);
-        //em.persist(s1);
+        em.persist(s1);
 
         em.getTransaction().commit();
         em.close();

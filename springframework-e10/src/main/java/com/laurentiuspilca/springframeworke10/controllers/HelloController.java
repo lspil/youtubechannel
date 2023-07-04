@@ -9,6 +9,13 @@ import java.util.Map;
 @RestController
 public class HelloController {
 
+    @GetMapping(path = "/test")
+    public String test0(@RequestHeader String a,
+                       @RequestHeader String b,
+                       @RequestHeader String c) {
+        return a + " " + b + " " + c;
+    }
+    
     @PostMapping(path = "/test/{name}")
     public String test(@PathVariable String name,
                        @RequestHeader String a,

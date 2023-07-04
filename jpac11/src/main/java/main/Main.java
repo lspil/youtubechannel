@@ -31,17 +31,18 @@ public class Main {
         em.getTransaction().begin();
 
 //        Product p = new Product();
-//        p.setId(11);
+//        p.setId(12);
 //        p.setName("P1");
 //
 //        em.persist(p); // INSERT
-//        em.flush();
-//
+//        //em.flush();
+
 //        System.out.println(":)");
 
-//        Product p = em.find(Product.class, 10);
 
-//        Product p = em.getReference(Product.class, 10);
+//        Product p = em.find(Product.class, 11);
+
+//        Product p = em.getReference(Product.class, 11);
 //        System.out.println(p);
 
 //        Product p = new Product();
@@ -50,27 +51,29 @@ public class Main {
 //        em.persist(p);
 //        System.out.println(em.contains(p)); // true
 
-//        Product p = em.find(Product.class, 50);
+//        Product p = em.find(Product.class, 11);
 //        em.remove(p); // only works on managed instances
 
 //        Product p = new Product();
-//        p.setId(11);
-//        em.merge(p);  // adds in the context the detached instance
-//        System.out.println(em.contains(p)); //  false
-//        em.remove(p);
+//        p.setId(12);
+//        p.setName("MK");
+//        Product p2 = em.merge(p);  // adds in the context the detached instance
+//        System.out.println(em.contains(p)); 		//  false
+//        System.out.println(em.contains(p2)); 		//  true
+//        em.remove(p2);
 
-//        Product p = em.find(Product.class, 11);
-//        p.setName("A");
+        Product p = em.find(Product.class, 11);
+        p.setName("A");
 //        em.refresh(p);  // updates the instance with what we have in the DB
         // the name of p becomes again Y
 
-        Product p1 = new Product();
-        p1.setName("Q");
-        p1.setId(100);
-        em.persist(p1); // p1 is added to the context
-
-        em.clear(); // takes all instances out of the context ( including p1 )
-        //em.detach(p1); // takes p1 out of the context
+//        Product p1 = new Product();
+//        p1.setName("Q");
+//        p1.setId(100);
+//        em.persist(p1); // p1 is added to the context
+//
+//        em.clear(); // takes all instances out of the context ( including p1 )
+//        //em.detach(p1); // takes p1 out of the context
 
         em.getTransaction().commit(); // the insert doesn't happen anymore
         em.close();

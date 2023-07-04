@@ -5,6 +5,7 @@ import entities.enums.Currency;
 import javax.persistence.*;
 
 @Entity
+@Table(name="price")
 public class Price {
 
     @Id
@@ -13,6 +14,7 @@ public class Price {
 
     private double amount;
 
+    //@Enumerated(EnumType.ORDINAL)			// default
     @Enumerated(EnumType.STRING)
     private Currency currency;
 

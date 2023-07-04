@@ -1,8 +1,10 @@
 package entities;
 
 import javax.persistence.Embeddable;
+import javax.persistence.Table;
 
 @Embeddable
+@Table(name="document")
 public class Document {
 
     private String number;

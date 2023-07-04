@@ -3,6 +3,7 @@ package entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name="detail")
 public class Detail {
 
     @Id
@@ -12,7 +13,8 @@ public class Detail {
     private int kcal;
 
     @JoinColumn(name = "product")
-    @OneToOne(cascade = CascadeType.ALL)
+//    @OneToOne()
+    @OneToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
     private Product product;
 
     public int getId() {
@@ -38,4 +40,6 @@ public class Detail {
     public void setProduct(Product product) {
         this.product = product;
     }
+    
+    
 }

@@ -6,9 +6,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
+import javax.persistence.Table;
 
 @Entity
 @IdClass(DepartmentPK.class)
+@Table(name="department")
 public class Department {
 
     @Id

@@ -14,35 +14,43 @@ import org.springframework.security.web.server.SecurityWebFilterChain;
 @Configuration
 public class SecurityConfig {
 
-  @Value("${keys.uri}")
-  private String keysUri;
+//  @Value("${keys.uri}")
+//  private String keysUri;
 
-//  @Bean
-//  public ReactiveUserDetailsService userDetailsService() {
-//    var u1 = User.withUsername("john")
-//        .password(passwordEncoder().encode("12345"))
-//        .authorities("read")
-//        .build();
-//
-//    return new MapReactiveUserDetailsService(u1);
-//  }
-//
-//  @Bean
-//  public PasswordEncoder passwordEncoder() {
-//    return new BCryptPasswordEncoder();
-//  }
+  @Bean
+  public ReactiveUserDetailsService userDetailsService() {
+    var u1 = User.withUsername("john")
+        .password(passwordEncoder().encode("12345"))
+        .authorities("read")
+        .build();
+
+    return new MapReactiveUserDetailsService(u1);
+  }
+
+  @Bean
+  public PasswordEncoder passwordEncoder() {
+    return new BCryptPasswordEncoder();
+  }
 
   @Bean
   public SecurityWebFilterChain webFilterChain(ServerHttpSecurity http) {
-    return http
-            .oauth2ResourceServer(
-                j -> j.jwt().jwkSetUri(keysUri)
-            )
-            .authorizeExchange()
-              .pathMatchers("/demo/**").authenticated()
-              .anyExchange().permitAll()
-          .and()
-            .build();
+	  return http
+			.httpBasic()
+		.and()
+			.authorizeExchange()							// authorizeRequest()
+				.pathMatchers("/demo/**").authenticated()
+				.anyExchange().permitAll()
+		.and()
+         	.build();
+//    return http
+//            .oauth2ResourceServer(
+//                j -> j.jwt().jwkSetUri(keysUri)
+//            )
+//            .authorizeExchange()
+//              .pathMatchers("/demo/**").authenticated()
+//              .anyExchange().permitAll()
+//          .and()
+//            .build();
   }
 
 }

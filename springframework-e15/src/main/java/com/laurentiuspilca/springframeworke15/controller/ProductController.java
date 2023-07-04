@@ -13,7 +13,7 @@ public class ProductController {
         Product p = new Product();
 
         p.setName(name);
-        p.setPrice(10);
+        p.setPrice(5);
 
         return p;
     }

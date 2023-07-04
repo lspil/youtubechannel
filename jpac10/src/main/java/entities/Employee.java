@@ -3,6 +3,7 @@ package entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name="employee")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Employee {
 

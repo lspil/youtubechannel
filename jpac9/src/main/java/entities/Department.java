@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Map;
 
 @Entity
+@Table(name="department")
 public class Department {
 
     @Id
@@ -13,7 +14,7 @@ public class Department {
     private String name;
 
     @OneToMany(mappedBy = "department")
-    @MapKey(name = "id")
+    @MapKey(name = "id")						// the id is put as the key of the map
     private Map<Integer, Employee> employees;
 
     public int getId() {

@@ -3,9 +3,13 @@ package entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name="person")
+//@Access(AccessType.FIELD)
 @Access(AccessType.PROPERTY)
 public class Person {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id; // FIELD ACCESS
 
     private String name;

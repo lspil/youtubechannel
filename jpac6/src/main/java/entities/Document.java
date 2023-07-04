@@ -3,6 +3,7 @@ package entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name="document")
 public class Document {
 
     @Id
@@ -11,8 +12,10 @@ public class Document {
 
     private String name;
 
+    // a simple object
+    //@ManyToOne
     @ManyToOne(cascade = CascadeType.PERSIST, optional = false)
-    @JoinColumn(name = "person")
+//    @JoinColumn(name = "person")
     private Person person;
 
     public int getId() {

@@ -21,6 +21,10 @@ public class ProjectConfig {
         return dataSource;
     }
 
+//    @Bean
+//    public JdbcTemplate jdbcTemplate(DataSource source) {
+//        return new JdbcTemplate(source);
+//    }
     @Bean
     public JdbcTemplate jdbcTemplate() {
         return new JdbcTemplate(dataSource());

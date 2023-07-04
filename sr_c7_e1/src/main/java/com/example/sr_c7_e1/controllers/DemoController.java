@@ -11,9 +11,9 @@ public class DemoController {
 
   @GetMapping(value = "/demo", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
   public Mono<String> demo() {
-//    ReactiveSecurityContextHolder.getContext()
-//        .map(sc -> sc.getAuthentication())
-//        .subscribe(a -> System.out.println(a));
+    ReactiveSecurityContextHolder.getContext()
+        .map(sc -> sc.getAuthentication())
+        .subscribe(a -> System.out.println(a));
 
     return Mono.just("demo");
   }

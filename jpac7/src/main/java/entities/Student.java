@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name="student")
 public class Student {
 
     @Id
@@ -12,6 +13,7 @@ public class Student {
 
     private String name;
 
+//    @ManyToMany()
     @ManyToMany(mappedBy = "students", cascade = CascadeType.PERSIST)
     private List<Professor> professors;
 

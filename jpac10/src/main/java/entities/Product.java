@@ -3,6 +3,7 @@ package entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name="product")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Product {
 

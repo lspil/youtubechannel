@@ -11,14 +11,15 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
-    @Transactional 
+    @Transactional()
     // rollsback the RuntimeException but does not rollback the checked exception
     public void addOneProduct() {
-        productRepository.addProduct("Beer");
-        try {
-            throw new RuntimeException(":(");
-        } catch (RuntimeException e) {
-            e.printStackTrace();
-        }
+        productRepository.addProduct("Beer2");
+        throw new RuntimeException(":(");
+//        try {
+//            throw new RuntimeException(":(");
+//        } catch (RuntimeException e) {
+//            //e.printStackTrace();
+//        }
     }
 }

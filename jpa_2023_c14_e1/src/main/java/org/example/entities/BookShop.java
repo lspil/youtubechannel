@@ -2,14 +2,20 @@ package org.example.entities;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
-public class Customer {
+@Table(name = "book_shops")
+public class BookShop {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String name;
+
+    @ManyToMany
+    private List<Book> booksList;
 
     public int getId() {
         return id;
@@ -27,9 +33,17 @@ public class Customer {
         this.name = name;
     }
 
+    public List<Book> getBooksList() {
+        return booksList;
+    }
+
+    public void setBooksList(List<Book> booksList) {
+        this.booksList = booksList;
+    }
+
     @Override
     public String toString() {
-        return "Customer{" +
+        return "BookShop{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

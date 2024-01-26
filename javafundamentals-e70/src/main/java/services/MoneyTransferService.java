@@ -37,9 +37,11 @@ public class MoneyTransferService {
       accountRepository.updateAccount(con, a1);
 //      if (true) throw new RuntimeException(":(");
       accountRepository.updateAccount(con, a2);
-      con.commit();
     } catch (SQLException e) {
       e.printStackTrace();
+    }
+    finally {
+      con.commit();
     }
   }
 }
